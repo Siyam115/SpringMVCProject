@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    background: url('https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8fDA%3D') no-repeat center center/cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.theme-section {
+    padding: 50px 0;
+}
+
+.theme-section .icon {
+    font-size: 2.5rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+}
+
+.theme-section .feature-item {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    border: 1px dotted #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.theme-section .feature-item:hover {
+    transform: scale(1.05);
+    background-color: #fff;
+}
+
+.interior-section img {
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.package-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.package-card img {
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover img {
+    transform: scale(1.1);
+}
+
+.package-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.package-card:hover .package-overlay {
+    opacity: 1;
+}
+
+.package-overlay .button {
+    display: inline-block;
+    background: #FFEB3B;  /* Set solid yellow color */
+    color: black;  /* Change text color to black for better contrast */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.package-overlay .button:hover {
+    background: #FDD835;  /* Slightly darker yellow on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.new-section {
+    padding: 50px 0;
+}
